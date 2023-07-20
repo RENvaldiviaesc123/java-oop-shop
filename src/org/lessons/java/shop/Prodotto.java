@@ -77,7 +77,7 @@ public class Prodotto {
         return codePlusName;
     }
     public double getPriceWithIva () {
-        double pricePlusIva = price + (price + iva/100);
+        double pricePlusIva = price + (price * iva/100);
         return pricePlusIva;
     }
 
