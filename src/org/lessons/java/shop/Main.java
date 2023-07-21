@@ -20,12 +20,22 @@ public class Main {
         System.out.println("Inserisci l'IVA del prodotto!");
         double productIva = scan.nextDouble();
 
+        System.out.println("Inserisci la categoria del appartenente al prodotto: ");
+        String productCategory = scan.nextLine();
+
+        System.out.println("Inserisci anche una descrizione per la categoria: ");
+        String productCatDesc = scan.nextLine();
+
         System.out.println("Questo è il codice assegnato al suo prodotto: ");
         System.out.println(productCode);
 
-        //Creo un oggetto prodotto
+        //Creo un oggetto
         Prodotto productOne = new Prodotto(productCode, productName, productDescrizione, productPrice, productIva);
+        Categoria categoryOne = new Categoria(productCategory, productCatDesc);
+
+        //Stampo
         System.out.println(productOne);
+        System.out.println(categoryOne);
         System.out.println("Il nome esteso è: " + productOne.getCodeName());
         System.out.println("Il prezzo con IVA è: " + productOne.getPriceWithIva());
         scan.close();
