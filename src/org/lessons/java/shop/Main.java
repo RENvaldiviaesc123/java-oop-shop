@@ -8,6 +8,10 @@ public class Main {
 
         //Chiediamo le informazioni del prodotto
         int productCode =  (int)(Math.random()*1000000001) ;
+
+        System.out.println("Questo sarà il codice assegnato al suo prodotto: ");
+        System.out.println(productCode);
+
         System.out.println("Benvenuto! Inserisci il nome del prodotto");
         String productName = scan.nextLine();
 
@@ -26,8 +30,7 @@ public class Main {
         System.out.println("Inserisci anche una descrizione per la categoria: ");
         String productCatDesc = scan.nextLine();
 
-        System.out.println("Questo è il codice assegnato al suo prodotto: ");
-        System.out.println(productCode);
+
 
         //Creo un oggetto
         Prodotto productOne = new Prodotto(productCode, productName, productDescrizione, productPrice, productIva);

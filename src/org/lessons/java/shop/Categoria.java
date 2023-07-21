@@ -4,13 +4,13 @@ package org.lessons.java.shop;
 public class Categoria {
     //CAMPI
     private String nome;
-    private String descrizione;
+    private String proCatDesc;
 
     //COSTRUTTORI
 
-    public Categoria(String nome, String descrizione) {
+    public Categoria(String nome, String proCatDesc) {
         this.nome = nome;
-        this.descrizione = descrizione;
+        this.proCatDesc = proCatDesc;
     }
 
 
@@ -24,12 +24,12 @@ public class Categoria {
         this.nome = nome;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    public String getProCatDesc() {
+        return proCatDesc;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public void setProCatDesc(String proCatDesc) {
+        this.proCatDesc = proCatDesc;
     }
 
 
@@ -39,7 +39,7 @@ public class Categoria {
     public String toString() {
         return "Categoria{" +
                 "nome='" + nome + '\'' +
-                ", descrizione='" + descrizione + '\'' +
+                ", descrizione='" + proCatDesc + '\'' +
                 '}';
     }
 }
